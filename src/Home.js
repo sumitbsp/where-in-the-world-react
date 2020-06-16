@@ -54,9 +54,17 @@ function Home() {
                 <option value="oceania">Oceania</option>
             </select>
         </div>
-        <div>
+        <div className="countries-container">
             {allCountry.map((country) => {
-                return <Link to={`/${country.name}`} key={country.alpha3Code}><div >{country.name}</div></Link>
+                return <Link className="country-link" to={`/${country.name}`} key={country.alpha3Code}>
+                    <div className="country" >
+                        <img src={country.flag} alt="image" />
+                        <p className="country-name padding-left">{country.name}</p>
+                        <p className="padding-left margin-0">Population: {country.population}</p>
+                        <p className="padding-left margin-0">Region: {country.region}</p>
+                        <p className="padding-left margin-0">Capital: {country.capital}</p>
+                    </div>
+                </Link>
             })}
         </div>
     </div>
