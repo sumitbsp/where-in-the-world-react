@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/sumitbsp/where-in-the-world-react/static/css/main.28a1438f.chunk.css",
+    "main.js": "/sumitbsp/where-in-the-world-react/static/js/main.a2bbb4ba.chunk.js",
+    "main.js.map": "/sumitbsp/where-in-the-world-react/static/js/main.a2bbb4ba.chunk.js.map",
+    "runtime-main.js": "/sumitbsp/where-in-the-world-react/static/js/runtime-main.dd2a3746.js",
+    "runtime-main.js.map": "/sumitbsp/where-in-the-world-react/static/js/runtime-main.dd2a3746.js.map",
+    "static/js/2.0096f29b.chunk.js": "/sumitbsp/where-in-the-world-react/static/js/2.0096f29b.chunk.js",
+    "static/js/2.0096f29b.chunk.js.map": "/sumitbsp/where-in-the-world-react/static/js/2.0096f29b.chunk.js.map",
+    "index.html": "/sumitbsp/where-in-the-world-react/index.html",
+    "precache-manifest.e92ff9a0aacc44911e997103516dc224.js": "/sumitbsp/where-in-the-world-react/precache-manifest.e92ff9a0aacc44911e997103516dc224.js",
+    "service-worker.js": "/sumitbsp/where-in-the-world-react/service-worker.js",
+    "static/css/main.28a1438f.chunk.css.map": "/sumitbsp/where-in-the-world-react/static/css/main.28a1438f.chunk.css.map",
+    "static/js/2.0096f29b.chunk.js.LICENSE.txt": "/sumitbsp/where-in-the-world-react/static/js/2.0096f29b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dd2a3746.js",
+    "static/js/2.0096f29b.chunk.js",
+    "static/css/main.28a1438f.chunk.css",
+    "static/js/main.a2bbb4ba.chunk.js"
+  ]
+}
