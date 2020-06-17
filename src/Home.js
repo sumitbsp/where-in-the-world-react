@@ -22,7 +22,7 @@ function Home(props) {
     const onChangeSeachCountry = () => {
         const searchInput = document.getElementById('search-counrty');
         const filteredCountriesByName = allCountryCopy.filter((country) => {
-            if (country.name.toLowerCase().includes(searchInput.value)) {
+            if (country.name.toLowerCase().includes(searchInput.value.toLowerCase())) {
                 return country;
             };
         })
