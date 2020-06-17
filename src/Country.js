@@ -2,9 +2,7 @@ import React from 'react';
 import './App.css';
 import {
     BrowserRouter as Router,
-    Route,
     Link,
-    useParams
 } from "react-router-dom";
 
 class Country extends React.Component {
@@ -15,16 +13,13 @@ class Country extends React.Component {
 
     fetchCountry = async () => {
         const data = await (await fetch(`https://restcountries.eu/rest/v2/name${this.props.match.url}?fullText=true`)).json();
-        console.log(data)
-        console.log('fetch country is called')
-        this.setState({ data: data[0] }, console.log(this.state.data))
+        this.setState({ data: data[0] })
     }
 
     getBorderFullName = async () => {
         this.setState({ borders: [] })
         this.state.data.borders.map(async (border) => {
             const fetchBorder = await (await fetch(`https://restcountries.eu/rest/v2/alpha/${border}`)).json();
-            console.log(fetchBorder.name)
             this.setState((prevState) => ({
                 borders: [...(prevState.borders || []), fetchBorder.name]
             }))
@@ -35,7 +30,6 @@ class Country extends React.Component {
         await this.fetchCountry()
 
         this.getBorderFullName()
-        console.log(this.props.match)
     }
 
     handleClick = () => {
@@ -43,19 +37,19 @@ class Country extends React.Component {
     }
 
     async componentWillReceiveProps() {
-        await this.setState({ data: {} }, console.log(this.state.data));
+        await this.setState({ data: {} });
         await this.fetchCountry()
         this.getBorderFullName()
     }
 
     render() {
-        return <div className="padding-x" >
-            <Link to={"/"}><button>Back</button></Link>
+        return <div className={this.props.uiState === 'light' ? 'light-mode-bg padding-x country-page' : 'dark-mode-bg padding-x country-page'} >
+            <Link to={"/"}><button className={this.props.uiState === 'light' ? 'light-mode-el light-mode-button' : 'dark-mode-el dark-mode-button'}><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Back</button></Link>
             <div className="main-container">
                 <div className="flex-container">
                     <img className="country-flag" src={this.state.data.flag} alt="" width="400px" />
                 </div>
-                <div className="flex-container">
+                <div className={this.props.uiState === 'light' ? 'light-mode-bg flex-container' : 'dark-mode-bg flex-container'}>
                     <h2>{this.state.data.name}</h2>
                     <div className="country-details-container">
                         <div>
@@ -79,15 +73,12 @@ class Country extends React.Component {
                             </p>
                         </div>
                     </div>
-
-
-
                     <div className="border-container">
                         <p>
                             <span>Border Countries: </span>
                             {this.state.data.borders &&
                                 this.state.borders.map((border) => {
-                                    return <Link className="border" key={border} to={`/${border}`}>{border}
+                                    return <Link className={this.props.uiState === 'light' ? 'light-mode-el border light-mode-button' : 'dark-mode-el border dark-mode-button'} key={border} to={`/${border}`}>{border}
                                     </Link>
                                 })
                             }
