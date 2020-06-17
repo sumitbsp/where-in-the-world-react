@@ -1,22 +1,26 @@
 {
   "files": {
-    "main.css": "/sumitbsp/where-in-the-world-react/static/css/main.28a1438f.chunk.css",
-    "main.js": "/sumitbsp/where-in-the-world-react/static/js/main.a2bbb4ba.chunk.js",
-    "main.js.map": "/sumitbsp/where-in-the-world-react/static/js/main.a2bbb4ba.chunk.js.map",
-    "runtime-main.js": "/sumitbsp/where-in-the-world-react/static/js/runtime-main.dd2a3746.js",
-    "runtime-main.js.map": "/sumitbsp/where-in-the-world-react/static/js/runtime-main.dd2a3746.js.map",
-    "static/js/2.0096f29b.chunk.js": "/sumitbsp/where-in-the-world-react/static/js/2.0096f29b.chunk.js",
-    "static/js/2.0096f29b.chunk.js.map": "/sumitbsp/where-in-the-world-react/static/js/2.0096f29b.chunk.js.map",
-    "index.html": "/sumitbsp/where-in-the-world-react/index.html",
-    "precache-manifest.e92ff9a0aacc44911e997103516dc224.js": "/sumitbsp/where-in-the-world-react/precache-manifest.e92ff9a0aacc44911e997103516dc224.js",
-    "service-worker.js": "/sumitbsp/where-in-the-world-react/service-worker.js",
-    "static/css/main.28a1438f.chunk.css.map": "/sumitbsp/where-in-the-world-react/static/css/main.28a1438f.chunk.css.map",
-    "static/js/2.0096f29b.chunk.js.LICENSE.txt": "/sumitbsp/where-in-the-world-react/static/js/2.0096f29b.chunk.js.LICENSE.txt"
+    "main.css": "/where-in-the-world-react/static/css/main.54ffcfa8.chunk.css",
+    "main.js": "/where-in-the-world-react/static/js/main.36b915f7.chunk.js",
+    "main.js.map": "/where-in-the-world-react/static/js/main.36b915f7.chunk.js.map",
+    "runtime-main.js": "/where-in-the-world-react/static/js/runtime-main.86ec21e7.js",
+    "runtime-main.js.map": "/where-in-the-world-react/static/js/runtime-main.86ec21e7.js.map",
+    "static/css/2.03536927.chunk.css": "/where-in-the-world-react/static/css/2.03536927.chunk.css",
+    "static/js/2.2fc90978.chunk.js": "/where-in-the-world-react/static/js/2.2fc90978.chunk.js",
+    "static/js/2.2fc90978.chunk.js.map": "/where-in-the-world-react/static/js/2.2fc90978.chunk.js.map",
+    "index.html": "/where-in-the-world-react/index.html",
+    "precache-manifest.fc9101104744b8643d52440ee26a29ec.js": "/where-in-the-world-react/precache-manifest.fc9101104744b8643d52440ee26a29ec.js",
+    "service-worker.js": "/where-in-the-world-react/service-worker.js",
+    "static/css/2.03536927.chunk.css.map": "/where-in-the-world-react/static/css/2.03536927.chunk.css.map",
+    "static/css/main.54ffcfa8.chunk.css.map": "/where-in-the-world-react/static/css/main.54ffcfa8.chunk.css.map",
+    "static/js/2.2fc90978.chunk.js.LICENSE.txt": "/where-in-the-world-react/static/js/2.2fc90978.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/where-in-the-world-react/static/media/fontawesome-webfont.fee66e71.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.dd2a3746.js",
-    "static/js/2.0096f29b.chunk.js",
-    "static/css/main.28a1438f.chunk.css",
-    "static/js/main.a2bbb4ba.chunk.js"
+    "static/js/runtime-main.86ec21e7.js",
+    "static/css/2.03536927.chunk.css",
+    "static/js/2.2fc90978.chunk.js",
+    "static/css/main.54ffcfa8.chunk.css",
+    "static/js/main.36b915f7.chunk.js"
   ]
 }
