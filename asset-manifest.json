@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/where-in-the-world/static/css/main.4285e534.chunk.css",
+    "main.css": "/where-in-the-world/static/css/main.582dbe98.chunk.css",
     "main.js": "/where-in-the-world/static/js/main.c9b6a2d2.chunk.js",
     "main.js.map": "/where-in-the-world/static/js/main.c9b6a2d2.chunk.js.map",
     "runtime-main.js": "/where-in-the-world/static/js/runtime-main.85417e13.js",
@@ -9,10 +9,10 @@
     "static/js/2.e4ddde31.chunk.js": "/where-in-the-world/static/js/2.e4ddde31.chunk.js",
     "static/js/2.e4ddde31.chunk.js.map": "/where-in-the-world/static/js/2.e4ddde31.chunk.js.map",
     "index.html": "/where-in-the-world/index.html",
-    "precache-manifest.c932edfa0d680f517a772e4f29fd60fc.js": "/where-in-the-world/precache-manifest.c932edfa0d680f517a772e4f29fd60fc.js",
+    "precache-manifest.8244b9e2a3c1b12edcea667563da58ec.js": "/where-in-the-world/precache-manifest.8244b9e2a3c1b12edcea667563da58ec.js",
     "service-worker.js": "/where-in-the-world/service-worker.js",
     "static/css/2.67191439.chunk.css.map": "/where-in-the-world/static/css/2.67191439.chunk.css.map",
-    "static/css/main.4285e534.chunk.css.map": "/where-in-the-world/static/css/main.4285e534.chunk.css.map",
+    "static/css/main.582dbe98.chunk.css.map": "/where-in-the-world/static/css/main.582dbe98.chunk.css.map",
     "static/js/2.e4ddde31.chunk.js.LICENSE.txt": "/where-in-the-world/static/js/2.e4ddde31.chunk.js.LICENSE.txt",
     "static/media/font-awesome.min.css": "/where-in-the-world/static/media/fontawesome-webfont.fee66e71.woff"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.85417e13.js",
     "static/css/2.67191439.chunk.css",
     "static/js/2.e4ddde31.chunk.js",
-    "static/css/main.4285e534.chunk.css",
+    "static/css/main.582dbe98.chunk.css",
     "static/js/main.c9b6a2d2.chunk.js"
   ]
 }
