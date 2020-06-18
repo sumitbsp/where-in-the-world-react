@@ -1,22 +1,28 @@
 import React from 'react';
 import './App.css';
 import {
-    BrowserRouter as Router,
     Link,
 } from "react-router-dom";
 
 class Country extends React.Component {
     constructor(...props) {
         super();
+        // setting the country data in state as data object
+        // setting the borders of the country as borders array
         this.state = { data: {}, borders: [], value: 0 }
     }
 
+    // function to fetch single country from rest countries api with the use params passed as props to the component
     fetchCountry = async () => {
         const data = await (await fetch(`https://restcountries.eu/rest/v2/name${this.props.match.url}?fullText=true`)).json();
         this.setState({ data: data[0] })
-        window.scrollTo(0, 0)
+        setTimeout(() => {
+            window.scrollTo(0, 0)
+        }, 1);
+
     }
 
+    // function that calls the rest countries api with country code name to get full name that will be shown as borders
     getBorderFullName = async () => {
         this.setState({ borders: [] })
         this.state.data.borders.map(async (border) => {
@@ -27,22 +33,20 @@ class Country extends React.Component {
         })
     }
 
+    // calling fetch country when the component mounts
     async componentDidMount() {
         await this.fetchCountry()
-
         this.getBorderFullName()
     }
 
-    handleClick = () => {
-        this.forceUpdate();
-    }
-
+    // calling fetch country when user clicks on border countries
     async componentWillReceiveProps() {
         await this.setState({ data: {} });
         await this.fetchCountry()
         this.getBorderFullName()
     }
 
+    /* conditional classNames for dark mode toggle */
     render() {
         return <div className={this.props.uiState === 'light' ? 'light-mode-bg padding-x country-page' : 'dark-mode-bg padding-x country-page'} >
             <Link to={"/"}><button className={this.props.uiState === 'light' ? 'light-mode-el light-mode-button' : 'dark-mode-el dark-mode-button'}><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Back</button></Link>
