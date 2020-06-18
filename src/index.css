@@ -109,9 +109,9 @@ select {
 
 .countries-container{
     width: 100%;
+    min-height: 90vh;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
     flex-wrap: wrap;
 }
 
