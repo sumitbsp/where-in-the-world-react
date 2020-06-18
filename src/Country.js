@@ -14,6 +14,7 @@ class Country extends React.Component {
     fetchCountry = async () => {
         const data = await (await fetch(`https://restcountries.eu/rest/v2/name${this.props.match.url}?fullText=true`)).json();
         this.setState({ data: data[0] })
+        window.scrollTo(0, 0)
     }
 
     getBorderFullName = async () => {
@@ -73,7 +74,7 @@ class Country extends React.Component {
                             </p>
                         </div>
                     </div>
-                    <div className="border-container">
+                    {this.state.borders.length > 0 && <div className="border-container">
                         <p>
                             <span>Border Countries: </span>
                             {this.state.data.borders &&
@@ -84,6 +85,7 @@ class Country extends React.Component {
                             }
                         </p>
                     </div>
+                    }
                 </div>
 
             </div>
