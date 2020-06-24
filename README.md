@@ -1,11 +1,11 @@
-# A React Application made using Rest Countries API.
+## A React Application made using Rest Countries API.
 
-# Features
-### Use of React Router for different pages.
-### Use of both functional and class based components.
-### Users can filter countries by region.
-### Users can search for a country and view more information.
-### Implemented Dark Mode toggle.
+## Features
+Use of React Router for different pages.<br />
+Use of both functional and class based components.<br />
+Users can filter countries by region.<br />
+Users can search for a country and view more information.<br />
+Implemented Dark Mode toggle.<br />
 
 
 In the project directory, you can run:
